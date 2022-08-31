@@ -1,8 +1,9 @@
 const store = require("./app/store");
-const {fetchpost} = require("./features/task/taskSlice");
+const { fetchPost } = require("./features/postSlice/postSlice");
 
-store.subscribe(()=>{
-})
-const dispatch = store.dispatch()
-store.dispatch(fetchpost(dispatch));
+// store.subscribe(() =>
+// {
+// })
+
+store.dispatch(fetchPost());
 
